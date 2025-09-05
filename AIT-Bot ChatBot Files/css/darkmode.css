@@ -1,0 +1,260 @@
+/* Dark mode styles */
+body.dark-mode {
+    background-color: #1a202c;
+    color: #f7fafc;
+}
+
+
+body.dark-mode .technology-section,
+body.dark-mode .mission-section,
+body.dark-mode .main-footer,
+body.dark-mode .chat-sidebar,
+body.dark-mode .main-header,
+body.dark-mode .mobile-menu,
+body.dark-mode .feature-card,
+body.dark-mode .feedback-form-container,
+body.dark-mode .account-content #profile-form,
+body.dark-mode .settings-menu,
+body.dark-mode .team-member,
+body.dark-mode .faq-cta,
+body.dark-mode .contact-form-container{
+    background-color: #1E1E1E ;
+    color: #f7fafc;
+    border: none;
+}
+
+body.dark-mode .chat-container,
+body.dark-mode .chat-input,
+body.dark-mode .chat-messages,
+body.dark-mode .chat-container .chat-header,
+body.dark-mode .terms-card,
+body.dark-mode .privacy-card {
+    background-color: #252525;
+    color: #f7fafc;
+    border: none;
+}
+body.dark-mode .message {
+    background-color: #1a1919;
+    color: #f7fafc;
+}
+
+body.dark-mode .roadmap-list li {
+    background-color: #252525 ;
+}
+
+body.dark-mode .faq-categories .active{
+    background-color: rgb(32, 101, 250);
+    border-color: rgb(32, 101, 250);
+}
+
+body.dark-mode .faq-item,
+body.dark-mode .data-type,
+body.dark-mode .submit-btn,
+body.dark-mode .contact-card, 
+body.dark-mode #feedbackType,
+body.dark-mode .category-btn,
+body.dark-mode .faq-question,
+body.dark-mode .privacy-contact,
+body.dark-mode #feedbackMessage,
+body.dark-mode .form-group input,
+body.dark-mode .chat-input input[type="text"] {
+    background-color: rgb(49, 49, 49);
+    color:#f7fafc;
+    border: 1px solid #333;
+}
+
+body.dark-mode  .acceptance-banner,
+body.dark-mode  .compliance-banner {
+    background-color: rgb(49, 49, 49);
+    color:#f7fafc;;
+    border-left: solid rgb(32, 101, 250);
+}
+
+body.dark-mode .contact-support a,
+body.dark-mode .btn {
+    background-color: rgb(49, 49, 49);
+}
+
+body.dark-mode #feedbackType:focus,
+body.dark-mode #feedbackMessage:focus,
+body.dark-mode .form-group input:focus,
+body.dark-mode .chat-input input[type="text"]:focus {
+    border-color: rgba(93, 144, 255, 0.1);
+    background-color: #424242;
+}
+
+
+body.dark-mode .menu-toggle i.fas.fa-bars,
+body.dark-mode .mission-section p,
+body.dark-mode .hero-content h1,
+body.dark-mode .terms-intro p,
+body.dark-mode .privacy-intro p,
+body.dark-mode .last-updated p {
+    color: #f7fafc;
+}
+body.dark-mode .chat-input,
+body.dark-mode .main-footer,
+body.dark-mode .action-buttons,
+body.dark-mode .contact-support,
+body.dark-mode .settings-footer,
+body.dark-mode .sidebar-settings {
+    border-top: 1px solid rgba(255, 254, 254, 0.15);
+}
+body.dark-mode .user-profile,
+body.dark-mode .terms-section,
+body.dark-mode .privacy-section,
+body.dark-mode .settings-profile,
+body.dark-mode .settings-section h2,
+body.dark-mode .mobile-menu-header div,
+body.dark-mode .chat-container .chat-header,
+body.dark-mode .mobile-menu-nav .mobile-menu-divider {
+    border-bottom: 1px solid rgba(255, 254, 254, 0.15);
+}
+body.dark-mode .mobile-profile div {
+    border:none;
+}
+body.dark-mode .mobile-menu,
+body.dark-mode .chat-sidebar,
+body.dark-mode .settings-menu{  /*box shadow all around*/
+    box-shadow: 0 0px 5px rgba(255, 254, 254, 0.15);
+}
+body.dark-mode .chat-header {
+     background-color: rgba(233, 232, 232);
+}
+
+body.dark-mode .info-card h3,
+body.dark-mode .data-type h3,
+body.dark-mode .fas .fa-bars,
+body.dark-mode .container h2,
+body.dark-mode .tech-card h3,
+body.dark-mode .main-nav li a,
+body.dark-mode .contact-info p,
+body.dark-mode .settings-nav a,
+body.dark-mode .feature-card p,
+body.dark-mode .social-links h3,
+body.dark-mode .settings-menu a,
+body.dark-mode .user-profile h3,
+body.dark-mode .mobile-menu-link,
+body.dark-mode .settings-card h3,
+body.dark-mode .settings-menu div,
+body.dark-mode .contact-support p,
+body.dark-mode .settings-header h1,
+body.dark-mode .contact-form label,
+body.dark-mode .contact-support h3,
+body.dark-mode .preference-item h4,
+body.dark-mode .settings-section h2,
+body.dark-mode .settings-card label,
+body.dark-mode .mobile-profile-info p,
+body.dark-mode .mobile-profile-info h4 {
+    color: #f7fafc;
+}
+
+body.dark-mode .privacy-intro p,
+body.dark-mode .privacy-section p,
+body.dark-mode .privacy-contact p {
+    color: #828d94;
+}
+body.dark-mode .copy-btn:hover,
+body.dark-mode .submit-btn:hover,
+body.dark-mode .settings-btn:hover,
+body.dark-mode .settings-btn:hover, 
+body.dark-mode .followup-btn:hover,
+body.dark-mode .elaborate-btn:hover,
+body.dark-mode .summarize-btn:hover,
+body.dark-mode .history-list li:hover,
+body.dark-mode .settings-menu a:hover,
+body.dark-mode .mobile-menu-link:hover,
+body.dark-mode .settings-menu div:hover  {
+    background-color: rgba(170, 170, 170, 0.1);
+    color:#f7fafc;
+}
+body.dark-mode .tech-card:hover {
+     background-color: #1e2635;
+}
+
+body.dark-mode .team-member:hover {  /*box shadow all around*/
+    box-shadow: 0 0px 10px rgba(255, 255, 255, 0.15);
+}
+body.dark-mode .features{
+    background-color: rgba(51, 51, 51, 0.1);
+}
+body.dark-mode .feature-card,
+body.dark-mode .hero-buttons a  {
+    border: none;
+}
+
+body.dark-mode .chatbot-container,
+body.dark-mode .team-section,
+body.dark-mode .faq-section,
+body.dark-mode .feedback-section,
+body.dark-mode .account-container,
+body.dark-mode .tech-card {
+     background-color: #1a202c;
+}
+body.dark-mode .danger-zone .btn-danger,
+body.dark-mode .settings-footer .btn-danger {
+    background-color: red;
+    color:#f7fafc
+}
+body.dark-mode .btn-danger-outline {
+    background-color: rgb(248, 85, 85);
+    border-color: rgb(248, 85, 85);
+    color:#f7fafc
+}
+/* Typing Indicator */
+body.dark-mode .typing-dot {
+    background-color: #f7fafc;
+}
+/* Dark Mode Styles */
+
+body.dark-mode .settings-card,
+body.dark-mode .settings-sidebar {
+    background-color: #252525;
+    border-color: #4a5568;
+}
+
+body.dark-mode .card-header{
+    background: #2d3748;
+    border-color: #2d3748;
+}
+
+body.dark-mode .privacy-content {
+    background-color: transparent;
+}
+body.dark-mode .contact-section,
+body.dark-mode .form-group input,
+body.dark-mode .form-group select,
+body.dark-mode .form-group textarea {
+    background: #2d3748;
+    border-color: #4a5568;
+    color: #f7fafc;
+}
+
+body.dark-mode .security-item p,
+body.dark-mode .preference-item p {
+    color: #a0aec0;
+}
+body.dark-mode .mobile-menu-link i:hover {
+    background-color: rgba(255, 0, 0, 0.1);
+    color:#f7fafc;
+}
+
+body.dark-mode .toggle-slider {
+    background-color: #424242;
+}
+body.dark-mode input:checked + .toggle-slider {
+    background-color: var(--primary-color);
+}
+/* Dark mode support */
+.dark-mode .typing-indicator {
+    background-color: #333;
+}
+
+.dark-mode .typing-dot {
+    background-color: #aaa;
+}
+body.dark-mode .info-card {
+    background-color: #1E1E1E ;
+    border-radius: 20px;
+    padding: 2em 1em 1em 2em;
+}

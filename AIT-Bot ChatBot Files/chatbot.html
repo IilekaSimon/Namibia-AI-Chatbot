@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Chatbot Assistant | AIT-Bot</title>
+    <link rel="icon" type="image/png" href="img/ico.ico">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/chatbot.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="home.html" class="logo">
+                <img src="img/AIT-BotLogo2.png" alt="AIT-Bot Logo">
+            </a>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="chatbot.html">AIT-Bot Assistant</a></li>
+                    <li><a href="feedback.html">Feedback Hub</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="menu-toggle" id="menuToggle">
+            <i class="fas fa-bars"></i>
+        </button>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <div class="mobile-profile">
+                    <div class="mobile-profile-pic">
+                        <img src="img/what-is-ai.jpg" alt="User Profile">
+                    </div>
+                    <div class="mobile-profile-info">
+                        <h4>AI Teacher</h4>
+                        <p>techchat@aitbot.na</p>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="mobile-menu-nav">
+                
+                <li class="mobile-menu-divider">Quick links</li>
+
+                <li><a href="home.html" class="mobile-menu-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" class="mobile-menu-link"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="chatbot.html" class="mobile-menu-link"><i class="fas fa-robot"></i> AIT-Bot Assistant</a></li>
+                <li><a href="feedback.html" class="mobile-menu-link"><i class="fas fa-bullhorn"></i> Feedback Hub</a></li>
+                <li><a href="contact.html" class="mobile-menu-link"><i class="fas fa-phone"></i> Contact</a></li>
+                
+                <li class="mobile-menu-divider">Preferences</li>
+                
+                <li>
+                    <div class="menu-dark-mode">
+                        <span><i class="fas fa-moon"></i>Dark Mode</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="darkModeToggle" >
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </li>
+                <li><div class="read-aloud-toggle">
+                        <span><i class="fas fa-volume-up"></i>Speak</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="readAloudToggle" class="read-aloud-toggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </li>
+                <li class="mobile-menu-divider">Settings</li>
+                <li><a href="settings.html" class="mobile-menu-link"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="chatbot-main">
+        <aside class="chat-sidebar">
+            <div class="user-profile">
+                <div class="profile-pic">
+                    <img src="img/what-is-ai.jpg" alt="User Profile">
+                </div>
+                <div class="profile-info">
+                    <h3>AI Teacher</h3>
+                    <p>techchat@aitbot.na</p>
+                </div>
+            </div>
+            
+            <div class="chat-history">
+                <h4>Chat History</h4>
+                <ul class="history-list"></ul>
+            </div>
+            
+            <div class="sidebar-settings">
+                <button class="settings-btn">
+                    <i class="fas fa-cog"></i> Settings
+                </button>
+                <div class="settings-menu">
+                    <div class="menu-dark-mode">
+                        <span><i class="fas fa-moon"></i> Dark Mode</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="darkModeToggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <div class="read-aloud-toggle">
+                        <span><i class="fas fa-volume-up"></i> Speak</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="readAloudToggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                    <a href="settings.html"><i class="fas fa-cog"></i> Settings</a>
+                </div>
+            </div>
+        </aside>
+
+        <div class="chatbot-container">
+            <div class="chat-container">
+                <div class="chat-header">
+                    <span>AIT-Bot Assistant</span>
+                    <div class="chat-actions">
+                    </div>
+                </div>
+                
+                <div class="chat-messages">
+                    
+                </div>
+
+                <div class="chat-input">
+                    <input type="text" placeholder="Ask anything about AI, ML, or DL..." id="chat-input">
+                    <input type="file" id="file-input" style="display: none;">
+                    <button class="file-upload-btn" id="file-btn">
+                        <i class="fas fa-paperclip"></i>
+                    </button>
+                    <button id="mic-btn"><i class="fas fa-microphone"></i></button>
+                    <button id="send-btn"><i class="fas fa-paper-plane"></i></button>
+                    
+                    <div class="file-preview" id="file-preview" style="display: none;">
+                        <i class="fas fa-file-alt"></i>
+                        <span id="file-name"></span>
+                        <button id="remove-file"><i class="fas fa-times"></i></button>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Floating new chat button -->
+        <div id="floating-new-chat-btn" class="floating-btn" title="New Chat">
+            <i class="fas fa-plus"></i>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <p>&copy; 2025 AIT-Bot. All rights reserved.</p>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/chatbot.js"></script>
+    <script src="js/modules/menu.js"></script>
+    <script src="js/modules/darkmode.js"></script>
+</body>
+</html>

@@ -1,0 +1,233 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FAQs | AIT-Bot</title>
+    <link rel="icon" type="image/png" href="img/ico.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/faq.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="home.html" class="logo">
+                <img src="img/AIT-BotLogo2.png" alt="AIT-Bot Logo">
+            </a>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="chatbot.html">AIT-Bot Assistant</a></li>
+                    <li><a href="feedback.html">Feedback Hub</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="faq.html" class="active">FAQs</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+        </button>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <div class="mobile-profile">
+                    <div class="mobile-profile-pic">
+                        <img src="img/what-is-ai.jpg" alt="User Profile">
+                    </div>
+                    <div class="mobile-profile-info">
+                        <h4>AI Teacher</h4>
+                        <p>techchat@aitbot.na</p>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="mobile-menu-nav">
+                <li class="mobile-menu-divider">Quick links</li>
+                <li><a href="home.html" class="mobile-menu-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" class="mobile-menu-link"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="chatbot.html" class="mobile-menu-link"><i class="fas fa-phone"></i> AIT-Bot Assistant</a></li>
+                <li><a href="feedback.html" class="mobile-menu-link"><i class="fas fa-bullhorn"></i> Feedback Hub</a></li>
+                <li><a href="contact.html" class="mobile-menu-link"><i class="fas fa-phone"></i> Contact</a></li>
+                <li><a href="faq.html" class="mobile-menu-link active"><i class="fas fa-question-circle"></i> FAQs</a></li>
+                
+                <li class="mobile-menu-divider">Preferences</li>
+                <li>
+                    <div class="menu-dark-mode">
+                        <span><i class="fas fa-moon"></i>Dark Mode</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="darkModeToggle" class="dark-mode-toggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </li>
+                <li><div class="read-aloud-toggle">
+                        <span><i class="fas fa-volume-up"></i>Speak</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="readAloudToggle" class="read-aloud-toggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </li>
+                <li class="mobile-menu-divider">Settings</li>
+                <li><a href="settings.html" class="mobile-menu-link"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <section class="faq-hero">
+            <div class="container">
+                <h1>Frequently Asked Questions</h1>
+                <p>Find answers to common questions about AIT-Bot</p>
+            </div>
+        </section>
+
+        <section class="faq-section">
+            <div class="container">
+                <div class="faq-search">
+                    <input type="text" placeholder="Search FAQs..." id="faqSearch">
+                    <i class="fas fa-search"></i>
+                </div>
+
+                <div class="faq-categories">
+                    <button class="category-btn active" data-category="all">All Questions</button>
+                    <button class="category-btn" data-category="general">General</button>
+                    <button class="category-btn" data-category="technical">Technical</button>
+                    <button class="category-btn" data-category="account">Account</button>
+                    <button class="category-btn" data-category="privacy">Privacy</button>
+                </div>
+
+                <div class="faq-container">
+                    <div class="faq-group" data-category="general">
+                        <h2 class="faq-group-title">General Questions</h2>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What is AIT-Bot?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>AIT-Bot is an AI-powered teaching assistant designed to help students and educators with various learning and teaching tasks. It can answer questions, provide explanations, and assist with educational content.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Is AIT-Bot free to use?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, AIT-Bot is currently free for all users. We may introduce premium features in the future, but the core functionality will remain free for educational purposes.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-group" data-category="technical">
+                        <h2 class="faq-group-title">Technical Support</h2>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How do I reset my password?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>To reset your password, go to the login page and click on "Forgot Password." You'll receive an email with instructions to create a new password.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>What browsers are supported?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>AIT-Bot works best on the latest versions of Chrome, Firefox, Safari, and Edge. We recommend keeping your browser updated for the best experience.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-group" data-category="account">
+                        <h2 class="faq-group-title">Account Questions</h2>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How do I create an account?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Click on the "Sign Up" button on our homepage and follow the instructions. You'll need to provide a valid email address and create a password.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Can I use AIT-Bot without an account?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, you can access basic features without an account. However, creating an account allows you to save your progress and access additional features.</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="faq-group" data-category="privacy">
+                        <h2 class="faq-group-title">Privacy & Security</h2>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>Is my data secure with AIT-Bot?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>Yes, we take data security seriously. All your information is encrypted, and we comply with strict privacy regulations to protect your data.</p>
+                            </div>
+                        </div>
+                        <div class="faq-item">
+                            <div class="faq-question">
+                                <h3>How can I delete my account?</h3>
+                                <i class="fas fa-chevron-down"></i>
+                            </div>
+                            <div class="faq-answer">
+                                <p>You can delete your account by going to your account settings and selecting "Delete Account." This will permanently remove all your data from our systems.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="faq-cta">
+            <div class="container">
+                <div class="cta-content">
+                    <h2>Still have questions?</h2>
+                    <p>If you can't find what you're looking for, our support team is ready to help.</p>
+                    <a href="contact.html" class="btn"><i class="fas fa-envelope"></i> Contact Support</a>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 AIT-Bot. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/faq.js"></script>
+    <script src="js/modules/menu.js"></script>
+    <script src="js/modules/darkmode.js"></script>
+</body>
+</html>

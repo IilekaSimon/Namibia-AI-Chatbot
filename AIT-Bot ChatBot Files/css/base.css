@@ -1,0 +1,111 @@
+/* ===== GLOBAL STYLES ===== */
+:root {
+    --primary-color: #2563eb;  /* Trustworthy blue */
+    --primary-dark: #1d4ed8;
+    --primary-light: #3b82f6;
+    --secondary-color: #10b981;  /* Growth/tech green */
+    --dark-color: #1e293b;      /* Dark slate for text */
+    --light-color: #f8fafc;     /* Off-white */
+    --gray-color: #94a3b8;      /* Medium gray */
+    --dark-gray: #64748b;       /* Darker gray */
+    --light-gray: #e2e8f0;      /* Light gray */
+    --danger-color: #ef4444;    /* For errors */
+    --warning-color: #f59e0b;   /* For warnings */
+    --success-color: #10b981;   /* For success messages */
+    --sidebar-width: 280px;
+    --chat-container-width: 900px;
+}
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+    font-family: 'Inter', -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+}
+
+body {
+    background-color: var(--light-color);
+    color: var(--dark-color);
+    line-height: 1.6;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+/* ===== TYPOGRAPHY ===== */
+h1, h2, h3, h4, h5, h6 {
+    font-weight: 600;
+    line-height: 1.25;
+    color: var(--dark-color);
+}
+
+h1 { font-size: 2.5rem; }
+h2 { font-size: 2rem; }
+h3 { font-size: 1.5rem; }
+h4 { font-size: 1.25rem; }
+
+p {
+    margin-bottom: 1rem;
+    color: var(--dark-gray);
+}
+
+/* ===== BUTTON STYLES ===== */
+.btn {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+    background-color: white;
+    color: var(--primary-color);
+    padding: 0.8rem 1.8rem;
+    border-radius: 8px;
+    text-decoration: none;
+    font-weight: 600;
+    transition: all 0.3s ease;
+    border: 2px solid transparent;
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+}
+
+.btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 10px 15px -3px rgba(0, 0, 0, 0.1), 0 4px 6px -2px rgba(0, 0, 0, 0.05);
+    background-color: #f8fafc;
+}
+
+.btn i {
+    font-size: 1rem;
+}
+
+.btn-outline {
+    background-color: transparent;
+    border-color: white;
+    color: white;
+}
+
+.btn-outline:hover {
+    background-color: rgba(255, 255, 255, 0.1);
+    color: white;
+}
+
+/* ===== UTILITY CLASSES ===== */
+.text-center { text-align: center; }
+
+.mt-1 { margin-top: 1rem; }
+.mt-2 { margin-top: 2rem; }
+.mb-1 { margin-bottom: 1rem; }
+.mb-2 { margin-bottom: 2rem; }
+
+/* Add smooth scrolling */
+html {
+    scroll-behavior: smooth;
+}
+

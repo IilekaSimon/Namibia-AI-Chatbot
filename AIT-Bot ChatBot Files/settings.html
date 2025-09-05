@@ -1,0 +1,203 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Settings | AIT-Bot</title>
+    <link rel="icon" type="image/png" href="img/ico.ico">
+    <link rel="stylesheet" href="css/base.css">
+    <link rel="stylesheet" href="css/menu.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <link rel="stylesheet" href="css/settings.css">
+    <link rel="stylesheet" href="css/darkmode.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body>
+    <header class="main-header">
+        <div class="container">
+            <a href="home.html" class="logo">
+                <img src="img/AIT-BotLogo2.png" alt="AIT-Bot Logo">
+            </a>
+            
+            <nav class="main-nav">
+                <ul>
+                    <li><a href="home.html">Home</a></li>
+                    <li><a href="about.html">About</a></li>
+                    <li><a href="chatbot.html">AIT-Bot Assistant</a></li>
+                    <li><a href="feedback.html">Feedback Hub</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                </ul>
+            </nav>
+        </div>
+        <button class="menu-toggle" id="menuToggle">
+                <i class="fas fa-bars"></i>
+        </button>
+        <div class="mobile-menu" id="mobileMenu">
+            <div class="mobile-menu-header">
+                <div class="mobile-profile">
+                    <div class="mobile-profile-pic">
+                        <img src="img/what-is-ai.jpg" alt="User Profile">
+                    </div>
+                    <div class="mobile-profile-info">
+                        <h4>AI Teacher</h4>
+                        <p>techchat@aitbot.na</p>
+                    </div>
+                </div>
+            </div>
+            
+            <ul class="mobile-menu-nav">
+                
+                <li class="mobile-menu-divider">Quick links</li>
+
+                <li><a href="home.html" class="mobile-menu-link"><i class="fas fa-home"></i> Home</a></li>
+                <li><a href="about.html" class="mobile-menu-link"><i class="fas fa-info-circle"></i> About</a></li>
+                <li><a href="chatbot.html" class="mobile-menu-link"><i class="fas fa-robot"></i> AIT-Bot Assistant</a></li>
+                <li><a href="feedback.html" class="mobile-menu-link"><i class="fas fa-bullhorn"></i> Feedback Hub</a></li>
+                <li><a href="contact.html" class="mobile-menu-link"><i class="fas fa-phone"></i> Contact</a></li>
+                
+                <li class="mobile-menu-divider">Preferences</li>
+                
+                <li>
+                    <div class="menu-dark-mode">
+                        <span><i class="fas fa-moon"></i>Dark Mode</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="darkModeToggle" class="dark-mode-toggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </li>
+                <li><div class="read-aloud-toggle">
+                        <span><i class="fas fa-volume-up"></i>Speak</span>
+                        <label class="toggle-switch">
+                            <input type="checkbox" id="readAloudToggle" class="read-aloud-toggle">
+                            <span class="toggle-slider"></span>
+                        </label>
+                    </div>
+                </li>
+                <li class="mobile-menu-divider">Settings</li>
+                <li><a href="settings.html" class="mobile-menu-link"><i class="fas fa-cog"></i> Settings</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main class="settings-container">
+        <div class="settings-sidebar">
+            <div class="settings-profile">
+                <div class="profile-avatar">
+                    <img src="img/what-is-ai.jpg" alt="Profile">
+                    <button class="avatar-edit"><i class="fas fa-camera"></i></button>
+                </div>
+                <h3>Artificial Intelligence Teacher</h3>
+                <p>techchat@aitbot.na</p>
+            </div>
+            
+            <nav class="settings-nav">
+                <ul>
+                    <li><a href="#preferences"><i class="fas fa-sliders-h"></i> Preferences</a></li>
+                    <li><a href="#data"><i class="fas fa-database"></i> Data</a></li>
+                </ul>
+            </nav>
+        </div>
+
+        <div class="settings-content">
+            <div class="settings-header">
+                <h1><i class="fas fa-cog"></i> Settings</h1>
+                <div class="settings-search">
+                    <input type="text" placeholder="Search settings...">
+                    <i class="fas fa-search"></i>
+                </div>
+            </div>
+            <section id="preferences" class="settings-section">
+                <h2>Preferences</h2>
+                <div class="settings-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-paint-brush"></i> Appearance</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="preference-item">
+                            <div>
+                                <h4>Dark Mode</h4>
+                                <p>Switch between light and dark theme</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="darkModeToggle">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                        <div class="preference-item">
+                            <div>
+                                <h4>Theme Color</h4>
+                                <p>Choose your primary color</p>
+                            </div>
+                            <div class="color-picker">
+                                <div class="color-option" style="background-color: #3b82f6;" data-color="blue"></div>
+                                <div class="color-option" style="background-color: #10b981;" data-color="green"></div>
+                                <div class="color-option" style="background-color: #f59e0b;" data-color="orange"></div>
+                                <div class="color-option" style="background-color: #8b5cf6;" data-color="purple"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="settings-card">
+                    <div class="card-header">
+                        <h3><i class="fas fa-comment-alt"></i> Chat Preferences</h3>
+                    </div>
+                    <div class="card-body">
+                        <div class="form-group">
+                            <label>Font Size</label>
+                            <select>
+                                <option>Small</option>
+                                <option selected>Medium</option>
+                                <option>Large</option>
+                            </select>
+                        </div>
+                        <div class="preference-item">
+                            <div>
+                                <h4>Read Aloud</h4>
+                                <p>Have responses read aloud</p>
+                            </div>
+                            <label class="toggle-switch">
+                                <input type="checkbox" id="readAloudToggle">
+                                <span class="toggle-slider"></span>
+                            </label>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Additional sections for Privacy, Notifications, Data -->
+            <!-- Content would follow similar structure -->
+            
+            <div class="settings-footer">
+                <button class="btn btn-danger"><i class="fas fa-trash-alt"></i> Delete Account</button>
+                <button class="btn btn-secondary"><i class="fas fa-sign-out-alt"></i> Sign Out</button>
+            </div>
+        </div>
+    </main>
+
+    <footer class="main-footer">
+        <div class="container">
+            <div class="footer-content">
+                <p>&copy; 2025 AIT-Bot. All rights reserved.</p>
+                <div class="footer-links">
+                    <a href="privacy.html">Privacy Policy</a>
+                    <a href="terms.html">Terms of Service</a>
+                    <a href="contact.html">Contact Us</a>
+                </div>
+                <div class="social-icons">
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-github"></i></a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="js/main.js"></script>
+    <script src="js/settings.js"></script>
+    <script src="js/modules/menu.js"></script>
+    <script src="js/modules/darkmode.js"></script>
+</body>
+</html>
