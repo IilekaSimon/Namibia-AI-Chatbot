@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Namibian Constitution - Supreme Law of Namibia</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <!-- Header -->
+    <header>
+        <div class="container header-content">
+            <div class="logo">
+                <div class="logo-icon">NC</div>
+                <div class="logo-text">Namibian Constitution</div>
+            </div>
+            <button class="mobile-menu-btn" id="mobileMenuBtn">
+                <span>☰</span>
+            </button>
+            <nav id="mainNav">
+                <ul>
+                    <li><a href="#ai-chatbot">AI Assistant</a></li>
+                    <li><a href="#overview" class="active">Overview</a></li>
+                    <li><a href="#chapters">Chapters</a></li>
+                    <li><a href="#amendments">Amendments</a></li>
+                    <li><a href="#resources">Resources</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <!-- AI Chatbot Section -->
+    <section class="ai-chatbot" id="ai-chatbot">
+        <div class="container">
+            <h2 class="section-title">AI Constitution Assistant</h2>
+            <p>Get help understanding the Namibian Constitution with our AI assistant</p>
+            
+            <div class="chatbot-container">
+                <iframe
+                    src="https://www.chatbase.co/chatbot-iframe/kdgPM5B-Xtbo3O9AEaW5k"
+                    width="100%"
+                    height="600"
+                    frameborder="0"
+                    style="border-radius: 8px;"
+                ></iframe>
+            </div>
+        </div>
+    </section>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <div class="container hero-content">
+            <h1>The Supreme Law of Namibia</h1>
+            <p>The Namibian Constitution is the fundamental law of Namibia, adopted in February 1990. It establishes the framework of the government, defines the fundamental rights of citizens, and embodies the aspirations of the Namibian people.</p>
+            <div class="btn-container">
+                <a href="#full-text" class="btn">Read Full Constitution</a>
+                <a href="#chapters" class="btn btn-outline">Explore Chapters</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Search Section -->
+    <section class="search-section">
+        <div class="container search-container">
+            <h2>Search the Constitution</h2>
+            <div class="search-box">
+                <input type="text" placeholder="Search for articles, rights, or keywords...">
+                <button type="submit">Search</button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Features Section -->
+    <section class="features" id="overview">
+        <div class="container">
+            <h2 class="section-title">Key Features of the Constitution</h2>
+            <div class="cards">
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-icon">①</div>
+                        <h3>Supreme Law</h3>
+                        <p>The Constitution is the supreme law of Namibia, and any other law found to be inconsistent with it is void to the extent of the inconsistency.</p>
+                        <a href="#" class="card-link">Learn more →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-icon">②</div>
+                        <h3>Bill of Rights</h3>
+                        <p>Contains an extensive Bill of Rights that protects fundamental human rights and freedoms, including equality, dignity, and freedom from discrimination.</p>
+                        <a href="#rights" class="card-link">Explore Rights →</a>
+                    </div>
+                </div>
+                <div class="card">
+                    <div class="card-content">
+                        <div class="card-icon">③</div>
+                        <h3>Separation of Powers</h3>
+                        <p>Establishes three separate branches of government: the Executive, Legislature, and Judiciary, with checks and balances between them.</p>
+                        <a href="#" class="card-link">Learn more →</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Chapters Section -->
+    <section class="chapters" id="chapters">
+        <div class="container">
+            <h2 class="section-title">Main Chapters of the Constitution</h2>
+            <div class="chapter-list" id="chapterList">
+                <!-- Chapters will be dynamically inserted here -->
+            </div>
+            <div class="pagination" id="pagination">
+                <!-- Pagination buttons will be dynamically inserted here -->
+            </div>
+        </div>
+    </section>
+
+    <!-- Amendments Section -->
+    <section class="amendments" id="amendments">
+        <div class="container">
+            <h2 class="section-title">Constitutional Amendments</h2>
+            <div class="amendment-item">
+                <h3>First Amendment Act 34 of 1998</h3>
+                <div class="amendment-meta">Came into force on 24 December 1998</div>
+                <p>This amendment modified provisions related to the first President's term limits and other administrative matters.</p>
+            </div>
+            <div class="amendment-item">
+                <h3>Second Amendment Act 7 of 2010</h3>
+                <div class="amendment-meta">Came into force on 7 May 2010</div>
+                <p>Introduced significant changes including the addition of Chapter 10A on Anti-Corruption Measures and amendments to various articles.</p>
+            </div>
+            <div class="amendment-item">
+                <h3>Third Amendment Act 8 of 2014</h3>
+                <div class="amendment-meta">Came into force on 13 October 2014</div>
+                <p>This comprehensive amendment introduced the position of Vice-President, modified the structure of the Presidency, and made changes to numerous constitutional provisions.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer id="resources">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>About This Project</h3>
+                    <p>This website provides accessible information about the Namibian Constitution to promote constitutional literacy among all Namibians.</p>
+                    <div class="social-links">
+                        <a href="#"><span>FB</span></a>
+                        <a href="#"><span>TW</span></a>
+                        <a href="#"><span>IG</span></a>
+                        <a href="#"><span>IN</span></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Quick Links</h3>
+                    <a href="#overview">Overview</a>
+                    <a href="#chapters">Chapters</a>
+                    <a href="#amendments">Amendments</a>
+                    <a href="#ai-chatbot">AI Assistant</a>
+                </div>
+                <div class="footer-section">
+                    <h3>Resources</h3>
+                    <a href="#">Download Full Text (PDF)</a>
+                    <a href="#">Constitutional Amendments</a>
+                    <a href="#">Related Legislation</a>
+                    <a href="#">Supreme Court Cases</a>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2023 Namibian Constitution Educational Resource. This is not an official government website.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <a href="#" class="back-to-top" id="backToTop">
+        <span>↑</span>
+    </a>
+
+    <script src="{{ url_for('static', filename='js/script.js') }}"></script>
+</body>
+</html>
